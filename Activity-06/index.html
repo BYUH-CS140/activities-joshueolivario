@@ -30,15 +30,42 @@
             padding: 0 25%;
         }
 
+        .recipe {
+          display: inline-block;
+        }
+
+        .ing {
+          width: 30%;
+          margin-left: 20%;
+        }
+
+        .how {
+          width: 45%;
+        }
+
         .hf {
             background-color: #e76e50;
             padding-top: 5px;
+            margin-bottom: 0px;
         }
 
         .hf-text {
             color: #274754;
+            font-weight: bold;
+            padding: 10px;
+
         }
-        
+
+        #image {
+          display: block;
+          margin: auto;
+          border-radius: 100px;
+        }
+
+        #footer {
+          margin-top: 50px;
+        }
+
 
 
 
@@ -67,7 +94,7 @@
         </p>
       </div>
       <div class="text">
-        <iframe style="align-content: center;"
+        <iframe
         width="560"
         height="315"
         src="https://www.youtube.com/embed/Ix5Dnud1bl0?si=2jxEJ62A0uy5mNXW"
@@ -82,7 +109,7 @@
         The Recipe
         <sup><a href="https://panlasangpinoy.com/filipino-food-pork-adobo-recipe/">2</a></sup>
       </h2>
-      <div style="width: 30%; display: inline-block; margin-left: 20%;">
+      <div class="recipe ing">
           <h3>Ingredients</h3>
           <ul>
             <li>Pork Belly</li>
@@ -95,7 +122,7 @@
             <li>salt</li>
           </ul>
       </div>
-      <div style="width: 45%; display: inline-block; margin-right: 0%;">
+      <div class="recipe how">
         <h3>How to cook</h3>
         <ol>
           <li>Combine the pork belly, soy sauce, and garlic then marinade for at least 1 hour</li>
@@ -108,14 +135,14 @@
           <li>Pray before you eat. And Enjoy!</li>
         </ol>
       </div>
- 
-      <img id="image" src="./adobo.png" alt="cooked pork adobo" style="display: block; margin: auto; border-radius: 15px;">
+
+      <img id="image" src="./adobo.png" alt="cooked pork adobo">
     </section>
-    <footer class="hf" style="margin-top: 20px; padding-top: 5px; margin-bottom: 0px;">
+    <footer id="footer" class="hf">
       <blockquote>
-        <p class="text hf-text" style="font-weight: bold; padding: 10px;"><cite>"Adobo is what defines a Filipino" </cite>-Myself</p>
+        <p class="text hf-text"><cite>"Adobo is what defines a Filipino" </cite>-Myself</p>
       </blockquote>
         <p class="navfoot"><sub>&copy; 2025 Joshue Sam Olivario at BYU-Hawaii</sub></p>
     </footer>
-  </body>      
+  </body>
 </html>
