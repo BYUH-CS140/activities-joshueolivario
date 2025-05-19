@@ -1,0 +1,93 @@
+
+/* parent style */
+body{
+    background-color: #f7c5a1;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* styles applied to header */
+header{
+    width: 100%;
+}
+
+/* header and footer */
+.hf {
+    background-color: #e76e50;
+    padding-top: 5px;
+    margin-bottom: 0px;
+}
+
+.hf-text {
+    color: #274754;
+    font-weight: bold;
+    padding: 10px;
+}
+
+/* styles applied to navbar*/
+.nav-ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0; 
+}
+
+.nav-li {
+    display: inline-block;
+}
+
+li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+
+/* This style adds a hover effect on a navbar item when the mouse pointer hovers over it. */
+li a:hover {
+    background-color: #f7c5a1;
+    color: #274754;
+}
+
+/* navbar and footer */
+    .navfoot {
+    margin: 0px;
+    padding: 5px;
+    background-color: #2a9d90;
+}
+
+/* texts */
+.text {
+    text-align: center;
+}
+
+#first-paragraph {
+    text-align: justify;
+    padding: 0 25%;
+}
+
+.recipe {
+    display: inline-block;
+}
+
+.ing {
+    width: 30%;
+    margin-left: 20%;
+}
+
+.how {
+    width: 45%;
+}
+
+
+/* page image */
+#image {
+    display: block;
+    margin: auto;
+    border-radius: 100px;
+}
+
+/* footer  */
+#footer {
+    margin-top: 50px;
+}
+
