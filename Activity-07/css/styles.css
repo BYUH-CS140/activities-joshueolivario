@@ -48,11 +48,25 @@ li a:hover {
     color: #274754;
 }
 
+
 /* navbar and footer */
+/* animation style added on navbar and footer */
     .navfoot {
-    margin: 0px;
-    padding: 5px;
-    background-color: #2a9d90;
+        margin: 0px;
+        padding: 5px;
+        background-color: #2a9d90;
+        animation-name: navfoot-color;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+}
+
+@keyframes navfoot-color {
+    0% {background-color: #2a9d90;}
+    25% {background-color:#89dfc3;}
+    50% {background-color:#89c4ce;}
+    75% {background-color:#5cd2ff;}
+    100% {background-color:#00adef;}
+
 }
 
 /* texts */
