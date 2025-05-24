@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* parent style */
+body{
+    background-color: #f2f2f2;;
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+/* styles applied to header */
+
+#page-header {
+    background-image: url(images/pantalan.jpg);
+    background-size: cover;
+    color: #ffffff;
+    padding: 1rem;
+}
+
+#page-footer {
+    background-image: url(images/pantalan.jpg);
+    background-size: cover;
+    color: #ffffff;
+    padding: 1rem;
+}
+
+/* header and footer */
+.title{
+    font-size: 2rem;
+    letter-spacing: 0.05em;
+}
+
+/* styles applied to navbar*/
+
+
+.nav-list {
+    display: flex;
+    list-style: none;
+    gap: 1rem;
+    margin-left: 35%;
+    margin-right: 35%;
+}
+
+.nav-list > li {
+    padding: 0.25rem 0.75rem; 
+    background-color: rgba(255,255,255,0.4); 
+    border-radius: 4px; 
+
+}
+
+.nav-list a {
+    color: #ffffff;
+    font-size: 1rem;
+    text-decoration: none;
+}
+
+/* This style adds a hover effect on a navbar item when the mouse pointer hovers over it. */
+.nav-list a:hover {
+    background-color: #ffffff;
+    color: #274754;
+}
+
+
+/* texts */
+
+.border {
+    margin: 1.5rem auto;
+}
+
+.text {
+    text-align: center;
+}
+
+#first-paragraph {
+    text-align: justify;
+    padding: 0 25%;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr 1fr;
+    gap: 10px;
+}
+
+.ing {
+    grid-column: 2/3;
+}
+
+.how {
+    grid-column: 3/4;
+}
+
+.resources {
+    background-color: gray;
+    padding: 1rem;
+    border-radius: 6px;
+    width: auto;
+}
+
+.resources li {
+    margin-left: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+
+/* page image */
+#image {
+    display: block;
+    margin: 20px auto;
+    border-radius: 100px;
+}
+
+/* footer  */
+#footer {
+    margin-top: 50px;
+}
+
