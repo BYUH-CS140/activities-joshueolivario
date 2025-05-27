@@ -101,7 +101,7 @@ footer {
     display: flex;
 }
 
-div.gallery {
+.gallery {
   background-color: #D3D3D3;
   overflow: auto;
   white-space: nowrap;
