@@ -1,0 +1,80 @@
+body {
+  background-color: forestgreen; /*background-color should have a dash(-) instead of a space */
+  margin: 0;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; /*font family was spelled Gil Sans without the single quotes around them*/
+}
+
+header {
+  background-color: Gold; /*used zerp instead of "o"*/
+  color: #004d00;
+  text-align: center;
+  font-size: 2em;
+  padding: 20px; /*padding has 3 D's*/
+  margin: 0;
+}
+
+nav { /* nav is not a class so it should not have the dot (.) before its name to call it */
+  background-color: #2e1a1a;
+  width: 100%;
+  margin: 0;
+  padding: 0 5px;
+  position: sticky;
+  top: 0;
+}
+
+nav li {
+  display: inline;
+  border-right: 1px solid grey;
+}
+
+nav li:last-child {
+  border-right: none;
+}
+
+nav ul {
+  list-style-type: none;
+  display: inline-flex;
+  align-items: center;
+}
+
+nav a {
+  text-decoration: none;
+  color: gold;
+  font-weight: bold;
+  padding: 14px 16px;
+}
+
+nav a:hover { /*two colons*/
+  background-color: gold;
+  color: #2e1a1a;
+}
+
+main {
+  background-color: lightgreen;
+  margin: 50px 100px; /*unit was not defined and the left and right margin. "px" added*/
+  padding: 50px;
+}
+
+#garden { /*this is an id so it should have a # sign before the name*/
+  border: 5px solid brown;
+  border-radius: 30px;
+  box-shadow: 5px 5px 15px grey;
+  height: 30%; /*Heigt unit does not have a unit % sign added as the unit*/ 
+  width: 30%;
+}
+
+section {
+  margin-top: 30px; /*there should be a dash(-) between margin and top */
+}
+
+h2 {
+  color: brown;
+}
+
+footer {
+  background-color: #2e1a1a;
+  opacity: 0.9;
+  padding: 30px 50px;
+  color: gold;
+  text-align: center;
+}
