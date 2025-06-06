@@ -119,17 +119,25 @@ nav {
     margin: 20px auto;
     margin-right: 20px;
     border-radius: 30px;
-    width: 15%;
+    width: 30%;
     float: left;
 }
 
 .container {
     display: flex;
     gap: 1rem;
+    padding: 3rem;
 }
 
 .item{
     margin: 1rem;
+    align-items: center;
+    width: 50%;
+}
+
+.container:second-child {
+    width: 50%;
+
 }
 
 /* footer  */
