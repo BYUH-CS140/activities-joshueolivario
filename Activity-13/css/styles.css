@@ -4,8 +4,9 @@
 }
 
 /* parent style */
-body{
-    background-color: #f2f2f2;;
+body {
+    background-color: #f2f2f2;
+    ;
     font-family: "Segoe UI", Arial, sans-serif;
 }
 
@@ -26,7 +27,7 @@ body{
 }
 
 /* header and footer */
-.title{
+.title {
     font-size: 2rem;
     letter-spacing: 0.05em;
 }
@@ -37,6 +38,7 @@ nav {
     background-color: #274754;
     padding: 5px;
 }
+
 .nav-list {
     /* display: flex; */
     list-style: none;
@@ -46,11 +48,11 @@ nav {
     /* margin: 0 auto; */
 }
 
-.nav-list  li {
-    display: inline-block;
-    padding: 0.25rem 0.75rem; 
-    background-color: rgba(255,255,255,0.4); 
-    border-radius: 4px; 
+.nav-list li {
+    /* display: inline-block; */
+    padding: 0.25rem 0.75rem;
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 4px;
 
 }
 
@@ -61,7 +63,7 @@ nav {
 }
 
 /* This style adds a hover effect on a navbar item when the mouse pointer hovers over it. */
-.nav-list > li:hover {
+.nav-list>li:hover {
     /* background-color: #ffffff; */
     box-shadow: 10px 10px black;
 }
@@ -88,7 +90,7 @@ nav {
 
 .grid-container {
     display: grid;
-    grid-template-columns: 1fr 2fr 2fr 1fr;
+    grid-template-columns: 1fr 2fr 1fr;
     gap: 10px;
 }
 
@@ -97,7 +99,7 @@ nav {
 }
 
 .how {
-    grid-column: 3/4;
+    grid-column: 2/3;
 }
 
 .resources {
@@ -118,28 +120,28 @@ nav {
 #image {
     display: block;
     margin: 20px auto;
-    margin-right: 20px;
+    /* margin-right: 20px; */
     border-radius: 30px;
-    width: 30%;
-    float: left;
+    width: 50%;
+    float: none;
 }
+
 
 .container {
-    display: flex;
-    gap: 1rem;
-    padding: 3rem;
-}
-
-.item{
-    margin: 1rem;
+    flex-wrap: wrap;
+    gap: 2rem;
     align-items: center;
-    width: 50%;
-}
-
-.container:second-child {
-    width: 50%;
+    justify-content: center;
 
 }
+
+.item {
+    width: 50%;
+    padding: 1rem;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
 
 /* footer  */
 #footer {
@@ -156,40 +158,51 @@ nav {
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
-        gap: 1rem;
+        /* gap: 1rem; */
         margin: 0;
     }
 
     iframe {
         width: 100%;
         max-width: 600px;
-        height: auto;
+        height: 100%;
         display: block;
         margin: 0 auto;
     }
 
     .grid-container {
         grid-template-columns: 1fr 1fr;
+        margin-bottom: 0;
     }
 
-    .ing,.how {
+    .ing,
+    .how {
         grid-column: auto;
     }
 
     .container {
+        display: flex;
         flex-wrap: wrap;
+        justify-content: center;
         gap: 2rem;
-    }
-
-    .item {
-        width: 48%;
+        flex-direction: row;
     }
 
     #image {
-        float: none;
-        width: 100%;
-        margin: 0 auto;
+        display: block;
+        margin: 20px auto;
+        margin-right: 20px;
+        border-radius: 30px;
+        width: 30%;
+        float: left;
     }
+
+    .item {
+        flex: 0 1 calc(50% - 1rem);
+        box-sizing: border-box;
+
+    }
+
 }
 
 @media screen and (min-width: 1024px) {
@@ -205,12 +218,10 @@ nav {
     }
 
     .item {
-        width: 48%;
+        width: 50%;
     }
 
     nav .nav-list {
         gap: 2rem;
     }
 }
-
-
