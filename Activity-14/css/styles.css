@@ -5,14 +5,20 @@
 
 /* parent style */
 body {
+    display: grid;
+    grid-template-areas:
+    "nav"
+    "header"
+    "main"
+    "footer";
     background-color: #f2f2f2;
-    ;
     font-family: "Segoe UI", Arial, sans-serif;
 }
 
 /* styles applied to header */
 
 #page-header {
+    grid-area: header;
     background-image: url(images/pantalan.jpg);
     background-size: cover;
     color: #ffffff;
@@ -35,6 +41,7 @@ body {
 /* styles applied to navbar*/
 
 nav {
+    grid-area: nav;
     background-color: #274754;
     padding: 5px;
 }
@@ -43,8 +50,8 @@ nav {
     display: flex;
     list-style: none;
     /* gap: 1rem; */
-    margin-left: 35%;
-    margin-right: 35%;
+    margin-left: 25%;
+    margin-right: 25%;
     /* margin: 0 auto; */
 }
 
@@ -71,6 +78,9 @@ nav {
     color: #274754;
 }
 
+main {
+    grid-area: main;
+}
 
 /* texts */
 
@@ -147,7 +157,8 @@ iframe {
 
 
 /* footer  */
-#footer {
+#page-footer {
+    grid-area: footer;
     margin-top: 50px;
 }
 
