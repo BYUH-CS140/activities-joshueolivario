@@ -216,6 +216,14 @@ iframe {
         margin: 0 auto;
     }
 
+    body {
+        display: grid;
+        grid-template-areas:
+        "header header"
+        "nav main"
+        "footer footer"
+    }
+
     .grid-container {
         grid-template-columns: repeat(2, 1fr);
         gap: 2rem;
