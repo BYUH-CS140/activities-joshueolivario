@@ -172,6 +172,7 @@ div.desc {
 }
 
 .food-content {
+    padding: 30% 10%;
     display: block;
     gap: .5rem;
     background-color: #D3D3D3;
@@ -181,9 +182,7 @@ div.desc {
     display: block;
 }
 
-.food-description {
-    grid-column: 2/3;
-}
+
 
 .food-image {
     width: 310px;
@@ -192,27 +191,21 @@ div.desc {
 
 .suman {
     display: block;
-    grid-template-columns: 1fr 1fr;
-    grid-column: 2/3;
-    grid-row: 2/3;
 }
 
 .tuyo {
     display: block;
-    grid-template-columns: 1fr 1fr;
-    grid-column: 1/2;
-    grid-row: 3/4;
 }
 
 @media screen and (min-width: 768px) {
     body {
         background-color: #D3D3D3;
         display: grid;
-        grid-template-areas: 
-        "nav nav"
-        "hero image"
-        "hero image2"
-        "footer footer";
+        grid-template-areas:
+            "nav nav"
+            "hero image"
+            "hero image2"
+            "footer footer";
     }
 
     .nav-list {
@@ -270,6 +263,26 @@ div.desc {
         width: 100%;
         height: auto;
     }
+
+    .food-content {
+        padding-top: 30%;
+        display: block;
+        gap: .5rem;
+        background-color: #D3D3D3;
+    }
+
+    .food-content {
+        padding: 10% 10%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: .5rem;
+        background-color: #D3D3D3;
+    }
+
+    .puto {
+        grid-column: 1/2;
+    }
+
 }
 
 @media screen and (min-width: 1024px) {
@@ -338,4 +351,17 @@ div.desc {
         width: 100%;
         height: auto;
     }
+
+    .food-content {
+        padding: 10% 10%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: .5rem;
+        background-color: #D3D3D3;
+    }
+
+    .puto {
+        grid-column: 1/2;
+    }
+
 }
