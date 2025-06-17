@@ -39,7 +39,6 @@ h1, h2 {
 
 .display-area #colorValue{
     display: flex;
-    /* position: relative; */
     height: 150px;
     font-weight: bolder;
     font-size: large;
