@@ -5,6 +5,24 @@
 
 .valid-feedback {
   color: green;
-  display: none; 
+  display: none;
 }
 
+label {
+  display: block;
+}
+
+input {
+  width: 100%;
+}
+
+@media screen and (min-width: 1024px) {
+  label {
+    display: inline-block;
+  }
+
+  input {
+    width: 15%;
+  }
+
+}
