@@ -8,8 +8,13 @@ body {
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
     overflow-x: hidden;
+    background-image: url('../images/background-image.png');
+    z-index: -500000;
 }
 
+div {
+    z-index: 10000;
+}
 
 .nav-list {
     list-style-type: none;
@@ -18,7 +23,7 @@ body {
 }
 
 .nav-list a {
-    color: white;
+    color: black;
     text-decoration: none;
 }
 
@@ -40,7 +45,7 @@ nav {
 
 
 nav a.icon {
-    background: rgba(141, 152, 156, 0.5);
+    background: rgba(141, 152, 156, 0.3);
     display: flex;
     justify-content: right;
     position: absolute;
@@ -64,7 +69,7 @@ nav #myLinks {
 }
 
 .nav-item .nav-link:hover {
-    background-color: azure;
+    background-color: #EAFFFD;
     color: #8d989c;
 }
 
@@ -130,6 +135,7 @@ nav #myLinks {
     height: auto;
     margin: 10% auto;
     padding: 10px;
+    background-color: #ccc;
 }
 
 .card:hover {
@@ -143,7 +149,7 @@ nav #myLinks {
 /* Slideshow container */
 .slideshow-container {
     position: relative;
-    background: azure;
+    background: #ccc;
 }
 
 /* Slides */
@@ -187,7 +193,7 @@ nav #myLinks {
 .dot-container {
     text-align: center;
     padding: 20px;
-    background: azure;
+    background-color: white;
 }
 
 /* The dots/bullets/indicators */
@@ -241,13 +247,14 @@ main h1 {
 .job2,
 .job3,
 .job4,
-.job5, .educ1, .educ2, .educ3 {
+.job5, .educ1, .educ2, .educ3, .educ4{
     display: flex;
     margin: 1.5rem;
     border: 1px solid #ccc;
     border-radius: 10px;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
     padding: 10px;
+    background-color: #ccc;
 }
 
 .work-grid {
@@ -256,6 +263,45 @@ main h1 {
 
 .work-h2 {
     text-align: center ;
+}
+
+.projects-grid {
+    margin: auto;
+}
+
+.proj1, .proj2, .proj3, .proj4 {
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    width: 50%;
+    background-color: #ccc;
+}
+
+div .proj-img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.projects-grid div {
+    margin: 3rem auto;
+}
+
+.home-grid div:hover{
+    transform: scale(1.1);
+}
+
+.projects-grid div:hover {
+    transform: scale(1.1);
+}
+
+.work-grid div:hover{
+    transform: scale(1.1);
+}
+
+.educ-grid div:hover{
+    transform: scale(1.1);
 }
 
 
