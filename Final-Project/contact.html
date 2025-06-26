@@ -5,8 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>Joshue Final Project</title>
+    <title>Contact</title>
 </head>
 
 <body>
@@ -15,11 +14,11 @@
             <a href="index.html"><img src="images/Oliv's-logos_white.png " style="width: 50px;" alt="white logo"></a>
             <div id="myLinks" class="nav-links">
                 <ul class="nav-list">
-                    <li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="work.html">Work Experience</a></li>
                     <li class="nav-item"><a class="nav-link" href="education.html">Education</a></li>
                     <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
-                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact me</a></li>
+                    <li class="nav-item active"><a class="nav-link" href="contact.html">Contact me</a></li>
                 </ul>
             </div>
             <a href="javascript:void(0);" class="icon hamburger" onclick="myFunction()">
@@ -27,68 +26,32 @@
             </a>
         </nav>
     </header>
-    <div id="hero">
-        <div id="hero-box">
-            <img id="bg" src="images/homepagebg.png" alt="mountains">
-        </div>
-        <div id="hero-text">
-            <h1>Hi! Im Joshue.</h1>
-            <p>I am a husband, father, freshman, computer science major, canoe pusher, a disciple of Jesus Christ.
-            </p>
-            <img class="face" src="images/JAS&AILATM7737-modified.png" alt="headshot images">
-            <button>Contact me!</button>
-        </div>
-    </div>
-    <main class="home-grid">
-        <h2>Current Interests...</h2>
-        <div class="card1">
-            <img src="images/Parenting-card.png" alt="hands held" style="width:100%">
-            <div class="container">
-                <h4><b>Parenting</b></h4>
+    <main class="contact-grid">
+        <h1>Contact Form</h3>
+            <div class="form-container">
+                <form action="/action_page.php">
+                    <label for="fname">First Name</label>
+                    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+                    <label for="lname">Last Name</label>
+                    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+                    <label for="country">Country</label>
+                    <select id="country" name="country">
+                        <option value="australia">Australia</option>
+                        <option value="canada">Canada</option>
+                        <option value="usa">USA</option>
+                    </select>
+
+                    <label for="subject">Subject</label>
+                    <textarea id="subject" name="subject" placeholder="Write something.."
+                        style="height:200px"></textarea>
+
+                    <input type="submit" value="Submit">
+                </form>
             </div>
-        </div>
-        <div class="card2">
-            <img src="images/Webdev-card.png" alt="code" style="width:100%">
-            <div class="container">
-                <h4><b>Coding</b></h4>
-            </div>
-        </div>
-        <div class="card3">
-            <img src="images/Canoe-card.png" alt="canoe" style="width:100%">
-            <div class="container">
-                <h4><b>Canoe Pushing</b></h4>
-            </div>
-        </div>
     </main>
-            <div class="slideshow-container">
 
-            <!-- Full-width slides/quotes -->
-            <div class="mySlides">
-                <q>I love you the more in that I believe you had liked me for my own sake and for nothing else</q>
-                <p class="author">- John Keats</p>
-            </div>
-
-            <div class="mySlides">
-                <q>But man is not made for defeat. A man can be destroyed but not defeated.</q>
-                <p class="author">- Ernest Hemingway</p>
-            </div>
-
-            <div class="mySlides">
-                <q>I have not failed. I've just found 10,000 ways that won't work.</q>
-                <p class="author">- Thomas A. Edison</p>
-            </div>
-
-            <!-- Next/prev buttons -->
-            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-            <a class="next" onclick="plusSlides(1)">&#10095;</a>
-        </div>
-
-        <!-- Dots/bullets/indicators -->
-        <div class="dot-container">
-            <span class="dot" onclick="currentSlide(1)"></span>
-            <span class="dot" onclick="currentSlide(2)"></span>
-            <span class="dot" onclick="currentSlide(3)"></span>
-        </div>
     <footer>
         <p>Joshue's Portfolio &copy2025 - Brigham Young University - Hawaii</p>
         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram"
@@ -107,7 +70,6 @@
                 d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951" />
         </svg>
     </footer>
-    <script src="scripts/script.js"></script>
 </body>
 
 </html>
