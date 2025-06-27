@@ -213,7 +213,7 @@ nav #myLinks {
 /* The dot/bullet/indicator container */
 .dot-container {
     text-align: center;
-    padding: 20px;
+    padding: 1.5rem;
     background-color: white;
 }
 
