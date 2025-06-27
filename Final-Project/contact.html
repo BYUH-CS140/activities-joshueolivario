@@ -5,13 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Contact</title>
 </head>
 
 <body>
     <header>
         <nav>
-            <a href="index.html"><img src="images/Oliv's-logos_white.png " style="width: 50px;" alt="white logo"></a>
+            <a href="index.html"><img src="images/Oliv's-logos_black.png " style="width: 50px;" alt="white logo"></a>
             <div id="myLinks" class="nav-links">
                 <ul class="nav-list">
                     <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
@@ -29,21 +30,17 @@
     <main class="contact-grid">
         <h1>Contact Form</h3>
             <div class="form-container">
-                <form action="/action_page.php">
+                <form action="https://formspree.io/f/myzjlzql" method="POST">
                     <label for="fname">First Name</label>
                     <input type="text" id="fname" name="firstname" placeholder="Your name..">
 
                     <label for="lname">Last Name</label>
                     <input type="text" id="lname" name="lastname" placeholder="Your last name..">
 
-                    <label for="country">Country</label>
-                    <select id="country" name="country">
-                        <option value="australia">Australia</option>
-                        <option value="canada">Canada</option>
-                        <option value="usa">USA</option>
-                    </select>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Your email address..">
 
-                    <label for="subject">Subject</label>
+                    <label for="subject">Message</label>
                     <textarea id="subject" name="subject" placeholder="Write something.."
                         style="height:200px"></textarea>
 
@@ -70,6 +67,7 @@
                 d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951" />
         </svg>
     </footer>
+    <script src="scripts/script.js"></script>
 </body>
 
 </html>

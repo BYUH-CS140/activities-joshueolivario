@@ -8,7 +8,7 @@ body {
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
     overflow-x: hidden;
-    background-image: url('../images/background-image.png');
+    background-image: url('../images/3.png');
     z-index: -500000;
 }
 
@@ -116,13 +116,33 @@ nav #myLinks {
 }
 
 .face {
-    width: 15%;
+    display: block;
+    margin: auto;
+    width: 30%;
+}
+
+.btn {
+    margin-top: 3rem;
+    padding: 1rem;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: large;
+    background-color: #a6565c;
+}
+
+.btn:hover {
+    background-color: azure;
 }
 
 .home-grid {
     display: block;
     height: auto;
     width: 100%;
+}
+
+.home-grid h2 {
+    background-color: white;
+    border: 1px solid #ccc;
 }
 
 .card1,
@@ -237,7 +257,10 @@ main h1 {
     text-align: center;
 }
 
-.worklogo, .educlogo {
+
+
+.worklogo,
+.educlogo {
     width: 25%;
     height: auto;
     margin-right: 1rem;
@@ -248,7 +271,11 @@ main h1 {
 .job2,
 .job3,
 .job4,
-.job5, .educ1, .educ2, .educ3, .educ4{
+.job5,
+.educ1,
+.educ2,
+.educ3,
+.educ4 {
     display: flex;
     margin: 1.5rem;
     border: 1px solid #ccc;
@@ -263,14 +290,17 @@ main h1 {
 }
 
 .work-h2 {
-    text-align: center ;
+    text-align: center;
 }
 
 .projects-grid {
     margin: auto;
 }
 
-.proj1, .proj2, .proj3, .proj4 {
+.proj1,
+.proj2,
+.proj3,
+.proj4 {
     text-align: center;
     border: 1px solid #ccc;
     border-radius: 10px;
@@ -289,7 +319,7 @@ div .proj-img {
     margin: 3rem auto;
 }
 
-.home-grid div:hover{
+.home-grid div:hover {
     transform: scale(1.1);
 }
 
@@ -297,45 +327,50 @@ div .proj-img {
     transform: scale(1.1);
 }
 
-.work-grid div:hover{
+.work-grid div:hover {
     transform: scale(1.1);
 }
 
-.educ-grid div:hover{
+.educ-grid div:hover {
     transform: scale(1.1);
 }
 
 
 /* contact page */
-input[type=text], select, textarea {
-  width: 100%;
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-  margin-top: 6px;
-  margin-bottom: 16px;
-  resize: vertical;
+
+
+input[type=text],
+input[type=email],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
 }
 
 input[type=submit] {
-  background-color: black ;
-  color: white;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
+    background-color: black;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
 }
 
 input[type=submit]:hover {
-  background-color: gray;
+    background-color: gray;
 }
 
 .form-container {
-  border-radius: 5px;
-  background-color: #f2f2f2;
-  padding: 20px;
-  margin: auto auto;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    margin: auto auto;
 }
 
 
@@ -403,7 +438,8 @@ input[type=submit]:hover {
     }
 
     /* work page */
-    .work-grid, .educ-grid {
+    .work-grid,
+    .educ-grid {
         display: grid;
         height: 100%;
         width: 100%;
@@ -417,19 +453,23 @@ input[type=submit]:hover {
         height: 25%;
     }
 
-    .work-h1, .educ-h1 {
+    .work-h1,
+    .educ-h1 {
         grid-column: 1/5;
     }
 
-    .job1, .educ1 {
+    .job1,
+    .educ1 {
         grid-column: 2/3;
     }
 
-    .job2, .educ2 {
+    .job2,
+    .educ2 {
         grid-column: 3/4;
     }
 
-    .job3, .educ3 {
+    .job3,
+    .educ3 {
         grid-column: 2/3;
     }
 
@@ -444,7 +484,7 @@ input[type=submit]:hover {
         grid-row: 4/5;
     }
 
-    .job4{
+    .job4 {
         grid-column: 2/3;
         grid-row: 6/7;
     }
@@ -458,6 +498,9 @@ input[type=submit]:hover {
         grid-row: 6/7;
     }
 
+    .form-container {
+        margin: auto 15%;
+    }
 
 
 
@@ -502,27 +545,33 @@ input[type=submit]:hover {
         height: auto;
     }
 
-        /* work page */
-    .work-grid, .educ-grid{
+    /* work page */
+    .work-grid,
+    .educ-grid {
         display: grid;
         grid-template-columns: 1fr 3fr 3fr 3fr 1fr;
     }
 
-    .work-h1, .educ-h1, .work-h2 {
+    .work-h1,
+    .educ-h1,
+    .work-h2 {
         grid-column: 1/6;
     }
 
 
-    
-    .job1, .educ1 {
+
+    .job1,
+    .educ1 {
         grid-column: 2/3;
     }
 
-    .job2, .educ2 {
+    .job2,
+    .educ2 {
         grid-column: 3/4;
     }
 
-    .job3, .educ3 {
+    .job3,
+    .educ3 {
         grid-column: 4/5;
     }
 
@@ -530,12 +579,17 @@ input[type=submit]:hover {
         width: 25%;
         height: auto;
     }
-    
+
     .worklogo {
         height: 50%;
     }
+
     .educlogo {
         height: 40%;
+    }
+
+    .form-container {
+        margin: auto 15%;
     }
 
 
